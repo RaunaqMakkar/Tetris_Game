@@ -26,7 +26,6 @@ tetris/
 ├── game.h/cpp         # Game engine and logic
 ├── board.h/cpp        # Board and collision detection
 ├── tetromino.h/cpp    # Piece definitions and movements
-├── CMakeLists.txt     # Build configuration
 ├── build.bat          # Build script for Windows
 └── README.md          # This file
 ```
@@ -34,9 +33,8 @@ tetris/
 ## Building the Project
 
 ### Prerequisites
-- C++ 17 compiler
-- CMake 3.10 or higher
-- Windows OS (for console-based gameplay)
+- C++ 17 compiler (g++, MSVC, or clang)
+- No external dependencies
 
 ### Build Instructions
 
@@ -46,17 +44,7 @@ cd tetris
 build.bat
 ```
 
-#### Method 2: Manual CMake build
-```bash
-cd tetris
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
-.\Release\tetris.exe
-```
-
-#### Method 3: Direct compilation with g++ or MSVC
+#### Method 2: Direct compilation with g++ (Any OS)
 ```bash
 g++ -std=c++17 main.cpp game.cpp board.cpp tetromino.cpp -o tetris.exe
 tetris.exe
