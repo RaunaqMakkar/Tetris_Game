@@ -127,14 +127,4 @@ Each piece maintains its own position, rotation state, and shape definition for 
 - Graphical UI (SDL/SFML)
 - Network multiplayer
 
-## License
-
-This project is open source and available for educational purposes.
-
-## Author
-
-Created as a demonstration of professional C++ game development practices.
-
----
-
 **Enjoy the game!**
